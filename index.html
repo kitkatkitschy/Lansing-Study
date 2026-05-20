@@ -33,7 +33,6 @@
     line-height: 1.65;
   }
 
-  /* ── COVER ── */
   .cover {
     background: linear-gradient(160deg, var(--navy) 0%, #0f2347 60%, #122f5c 100%);
     color: white;
@@ -150,10 +149,8 @@
     line-height: 1.7;
   }
 
-  /* ── MAIN LAYOUT ── */
   .page { max-width: 960px; margin: 0 auto; padding: 64px 40px 80px; }
 
-  /* ── SECTIONS ── */
   .section { margin-bottom: 72px; }
   .section-heading {
     font-family: 'DM Serif Display', serif;
@@ -180,7 +177,6 @@
     margin: 8px 0 16px;
   }
 
-  /* ── BULLETS ── */
   ul.styled { list-style: none; padding: 0; margin: 12px 0; }
   ul.styled li {
     padding: 7px 0 7px 20px;
@@ -201,7 +197,6 @@
     background: var(--teal);
   }
 
-  /* ── TABLES ── */
   .table-wrap { overflow-x: auto; margin: 16px 0; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
   table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
   thead tr { background: var(--navy); color: white; }
@@ -230,10 +225,8 @@
   .cell-teal  { background: var(--teal-light) !important; }
   .row-bold td { font-weight: 600; }
 
-  /* ── CONTEXT TABLE ── */
   .context-table thead th:first-child { width: 38%; }
 
-  /* ── HIGHLIGHT BOX ── */
   .highlight-box {
     background: var(--navy-light);
     border-left: 4px solid var(--navy);
@@ -243,10 +236,8 @@
     font-size: 14px;
   }
 
-  /* ── MONTHLY EBITDA ── */
   .ebitda-loss td { background: var(--red-light) !important; color: var(--red); font-weight: 600; }
 
-  /* ── RESPONSIVE ── */
   @media (max-width: 680px) {
     .kpi-grid { grid-template-columns: repeat(2, 1fr); }
     .kpi-grid .kpi-card:last-child:nth-child(odd) { grid-column: span 2; }
@@ -257,8 +248,6 @@
     .kpi-grid .kpi-card:last-child:nth-child(odd) { grid-column: auto; }
     .cover h1 { font-size: 30px; }
   }
-
-  /* ── PRINT ── */
   @media print {
     .cover { page-break-after: always; min-height: auto; padding: 60px 40px; }
     body { background: white; }
@@ -267,7 +256,6 @@
 </head>
 <body>
 
-<!-- ═══════════════════════════ COVER PAGE ═══════════════════════════ -->
 <section class="cover">
   <div class="cover-inner">
     <div class="cover-eyebrow">Internal Report &bull; Confidential</div>
@@ -314,49 +302,49 @@
 
     <div class="cover-takeaway">
       <div class="cover-takeaway-label">Headline Takeaway</div>
-      <p>Lansing is a viable store with strong holiday performance and excellent customer acquisition signals. The primary action item is right-sizing the off-season labor model.</p>
+      <p>Lansing is a viable store with strong holiday performance and excellent customer acquisition signals. The main action item is right-sizing the off-season labor model.</p>
+    </div>
+
+    <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1);">
+      <p style="font-size: 15px; color: rgba(255,255,255,0.65); font-style: italic; margin: 0; line-height: 1.7;">Note that these numbers do not include wine, as wine was not sold in Lansing for this time period.</p>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════ MAIN CONTENT ═══════════════════════════ -->
 <main class="page">
 
-  <!-- Executive Summary -->
   <section class="section">
     <h2 class="section-heading">Executive Summary</h2>
-    <p>Lansing opened in October 2025 as a holiday pop up and transitioned to a year round retail store in January 2026. With four months of true retail trading data, the picture is mixed but more positive than first impressions suggest. Lansing performs strongly during the holiday quarter and shows excellent customer acquisition signals. Off season EBITDA is thin and January 2026 was a small loss, but the store is contributing to the business overall.</p>
+    <p>Lansing opened in October 2025 as a holiday pop-up and became a year-round store in January 2026. With four months of regular retail data, the picture is mixed but more positive than it first appears. Lansing performs strongly during the holiday quarter and shows excellent customer acquisition signals. Off-season EBITDA is thin and January 2026 was a small loss, but the store is contributing to the business overall.</p>
 
     <div class="sub-heading">Headline Takeaway</div>
     <ul class="styled">
-      <li>Lansing generated about $125 thousand of EBITDA over its first seven months. Roughly 95 percent of that came from the October to December holiday window.</li>
-      <li>Holiday performance was strong. During October to December 2025, sales per square foot ran 15 percent ahead of Ann Arbor, and Lansing produced about $118 thousand of EBITDA.</li>
-      <li>Off season trading is thin. January through April 2026 produced about $7 thousand of EBITDA total, an average of roughly $1.7 thousand per month. January was a loss month at about negative $7 thousand.</li>
-      <li>The economic gap with Ann Arbor in the off season is real. Ann Arbor delivered 22 percent EBITDA margin January through April. Lansing delivered 4 percent. The main driver is labor productivity, not catalog or pricing.</li>
-      <li>Customer signals are excellent. Lansing captures emails on 56 percent of orders against 32 percent at Ann Arbor, and is acquiring new customers at almost twice the rate.</li>
+      <li>Lansing generated about $125K of EBITDA over its first seven months. Roughly 95% came from the October–December holiday window.</li>
+      <li>Holiday performance was strong. From October to December 2025, sales per square foot ran 15% ahead of Ann Arbor, and Lansing produced about $118K of EBITDA.</li>
+      <li>Off-season results are thin. January through April 2026 produced about $7K of EBITDA total — an average of roughly $1.7K per month. January was a loss at about negative $7K.</li>
+      <li>The off-season gap with Ann Arbor is real. Ann Arbor delivered a 22% EBITDA margin from January through April. Lansing delivered 4%. The main driver is labor productivity, not the product catalog or pricing.</li>
+      <li>Customer signals are excellent. Lansing captures emails on 56% of orders versus 32% at Ann Arbor, and is acquiring new customers at nearly twice the rate.</li>
     </ul>
 
     <div class="sub-heading">What This Suggests</div>
     <ul class="styled">
-      <li>Lansing is a viable store. It is contributing to the business and the brand is being received well in the market.</li>
-      <li>The off season operating model is too labor heavy for current volume. This is the most actionable lever.</li>
-      <li>A decision is warranted on whether to right size the cost structure, accept the holiday concentrated profile as part of the brand strategy, or wait for a full year of trading data before adjusting.</li>
+      <li>Lansing is a viable store. It's contributing to the business and the brand is being well received in the market.</li>
+      <li>The off-season operating model is too labor-heavy for current sales volume. This is the most actionable lever.</li>
+      <li>A decision is needed: right-size the cost structure, accept the holiday-concentrated profile as part of the brand strategy, or wait for a full year of data before making changes.</li>
     </ul>
   </section>
 
-  <!-- How to Read -->
   <section class="section">
     <h2 class="section-heading">How to Read This Report</h2>
-    <p>Lansing has only been open as a true retail store since January 2026. Comparing seven months of Lansing data to a mature Ann Arbor store on a trailing basis is misleading because half of Lansing's data comes from a pop up phase that was set up around holiday demand. To handle this fairly, the report uses three time windows.</p>
+    <p>Lansing has only been a regular retail store since January 2026. Comparing seven months of Lansing data directly to a mature Ann Arbor store is misleading, because half of Lansing's data comes from a pop-up phase built around holiday demand. To handle this fairly, the report uses three time windows.</p>
     <ul class="styled">
-      <li><strong>Full period October 2025 to April 2026.</strong> Useful for absolute totals.</li>
-      <li><strong>Pop up phase October to December 2025.</strong> Lansing operating as a holiday pop up. This is where its high water performance shows.</li>
-      <li><strong>Retail phase January to April 2026.</strong> The apples to apples view. Both stores in normal retail operation, same calendar window.</li>
+      <li><strong>Full period, October 2025 to April 2026.</strong> Useful for overall totals.</li>
+      <li><strong>Pop-up phase, October to December 2025.</strong> Lansing operating as a holiday pop-up. This is where its strongest performance shows.</li>
+      <li><strong>Retail phase, January to April 2026.</strong> The apples-to-apples view. Both stores in normal retail operation during the same calendar window.</li>
     </ul>
-    <p>Sources. All revenue, gross profit, labor, lease, utilities, marketing and EBITDA figures come directly from the store level P&amp;L. Order counts, AOV, units per transaction, holiday window slices, product mix and customer flags come from transaction level data and email capture data. Where the two sources differ on top line sales, the P&amp;L is treated as the source of truth.</p>
+    <p>All revenue, gross profit, labor, lease, utilities, marketing, and EBITDA figures come from the store-level P&amp;L. Order counts, AOV, units per transaction, product mix, and customer data come from transaction-level and email capture data. Where the two sources differ on top-line sales, the P&amp;L is the source of truth.</p>
   </section>
 
-  <!-- Store Context -->
   <section class="section">
     <h2 class="section-heading">Store Context</h2>
     <div class="table-wrap">
@@ -365,8 +353,8 @@
         <tbody>
           <tr><td>Square footage</td><td>5,000 sq ft</td><td>2,000 sq ft</td></tr>
           <tr><td>Years operating</td><td>More than 3 years</td><td>Open since October 2025</td></tr>
-          <tr><td>Phase Oct to Dec 2025</td><td>Year round retail</td><td>Holiday pop up</td></tr>
-          <tr><td>Phase Jan to Apr 2026</td><td>Year round retail</td><td>Year round retail</td></tr>
+          <tr><td>Phase Oct to Dec 2025</td><td>Year-round retail</td><td>Holiday pop-up</td></tr>
+          <tr><td>Phase Jan to Apr 2026</td><td>Year-round retail</td><td>Year-round retail</td></tr>
           <tr><td>Hours, weekday and Saturday</td><td>10am to 8pm</td><td>10am to 7pm</td></tr>
           <tr><td>Hours, Sunday</td><td>10am to 6pm</td><td>10am to 6pm</td></tr>
           <tr><td>Initial assortment</td><td>Full catalog</td><td>Limited (~150 SKUs at open)</td></tr>
@@ -375,10 +363,9 @@
     </div>
   </section>
 
-  <!-- Performance Scorecard -->
   <section class="section">
     <h2 class="section-heading">Performance Scorecard</h2>
-    <p>The most important view is the retail phase from January through April 2026. Both stores were operating in the same mode during the same calendar window.</p>
+    <p>The most important view is the retail phase from January through April 2026, when both stores were operating in the same way during the same calendar window.</p>
 
     <div class="sub-heading">Retail Phase &mdash; January to April 2026</div>
     <p class="italic-note">This is the apples-to-apples view.</p>
@@ -407,10 +394,10 @@
         </tbody>
       </table>
     </div>
-    <p class="italic-note">Green shading marks Lansing strengths. Red shading marks Lansing concerns. For labor as percent of sales, lower is better, so Lansing at 203 percent of Ann Arbor's ratio is unfavorable.</p>
+    <p class="italic-note">Green shading marks Lansing strengths. Red shading marks Lansing concerns. For labor as percent of sales, lower is better, so Lansing at 203% of Ann Arbor's ratio is unfavorable.</p>
 
-    <div class="sub-heading">Pop Up Phase &mdash; October to December 2025</div>
-    <p class="italic-note">Lansing was operating as a pop up. Ann Arbor was in normal mode. This window highlights what Lansing can do during gift giving season.</p>
+    <div class="sub-heading">Pop-Up Phase &mdash; October to December 2025</div>
+    <p class="italic-note">Lansing was operating as a pop-up. Ann Arbor was in normal mode. This window shows what Lansing can do during gift-giving season.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Metric</th><th>Ann Arbor</th><th>Lansing</th><th>Lansing as % of AA</th></tr></thead>
@@ -430,13 +417,12 @@
         </tbody>
       </table>
     </div>
-    <p class="italic-note">Note: Lansing's October EBITDA of $2,503 is depressed by about $11,864 of marketing and donations expense that hit October as part of the pop up launch. Backing out that one time spend, the Nov&ndash;Dec EBITDA run rate was healthy.</p>
+    <p class="italic-note">Note: Lansing's October EBITDA of $2,503 is lower than expected due to about $11,864 in marketing and donations expense tied to the pop-up launch. Backing that out, the November–December EBITDA run rate was healthy.</p>
   </section>
 
-  <!-- Four Wall Economics -->
   <section class="section">
     <h2 class="section-heading">Four Wall Economics</h2>
-    <p>EBITDA captures every store level cost, including labor, lease, utilities, marketing, supplies and licenses. It is the cleanest measure of whether a store is contributing to the business after all of its own costs are paid.</p>
+    <p>EBITDA captures every store-level cost — labor, lease, utilities, marketing, supplies, and licenses. It's the clearest measure of whether a store is covering all its own costs and contributing to the business.</p>
     <div class="sub-heading">Monthly EBITDA &mdash; October 2025 to April 2026</div>
     <div class="table-wrap">
       <table>
@@ -452,14 +438,13 @@
         </tbody>
       </table>
     </div>
-    <p>Lansing produced $124,677 of EBITDA over the full seven month period. Of that, $118,058 came from October to December and only $6,619 came from January to April. January 2026 was a small EBITDA loss. The off season is contributing very little after all costs are paid.</p>
-    <p>Ann Arbor produced $470,826 of EBITDA over the same period and shows a much steadier cadence. Even in the slowest month (January), Ann Arbor produced about $11 thousand of EBITDA. Lansing's variability between months is substantially higher.</p>
+    <p>Lansing produced $124,677 of EBITDA over the full seven months. Of that, $118,058 came from October–December and only $6,619 from January–April. January 2026 was a small loss. The off-season is contributing very little after all costs are paid.</p>
+    <p>Ann Arbor produced $470,826 over the same period with a much steadier month-to-month pattern. Even in its slowest month (January), Ann Arbor produced about $11K of EBITDA. Lansing's month-to-month variability is much higher.</p>
   </section>
 
-  <!-- Cost Gap -->
   <section class="section">
     <h2 class="section-heading">Where the Cost Gap Sits</h2>
-    <p>The primary driver of the EBITDA gap in the retail phase is labor. Other operating costs are reasonably scaled to the smaller store, but labor as a share of sales is roughly twice the Ann Arbor ratio.</p>
+    <p>The main driver of the EBITDA gap in the retail phase is labor. Other operating costs are reasonably scaled to the smaller store, but labor as a share of sales is roughly twice Ann Arbor's ratio.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Cost Line</th><th>Ann Arbor</th><th>Lansing</th><th>Index</th></tr></thead>
@@ -472,18 +457,17 @@
         </tbody>
       </table>
     </div>
-    <p>Total operating expenses as a percent of sales are slightly lower at Lansing. The store is not operationally bloated. The issue is concentrated in the labor line, where Lansing is running about 18 points higher than Ann Arbor as a share of sales.</p>
+    <p>Total operating expenses as a share of sales are actually slightly lower at Lansing. The store isn't operationally bloated. The problem is concentrated in labor, where Lansing is running about 18 points higher than Ann Arbor as a share of sales.</p>
     <div class="sub-heading">Two Questions Worth Pressure Testing</div>
     <ul class="styled">
-      <li>Is Lansing carrying more labor than the Jan to Apr volume requires? Matching even 70 percent of Ann Arbor's labor productivity ratio would shift Lansing's retail phase EBITDA from $7 thousand to roughly $26 thousand, or about $6.5 thousand per month.</li>
-      <li>Are the off season schedules sized for the holiday quarter that has now passed? The pop up phase added staff for the busy season and the store may not have right sized for the quieter months.</li>
+      <li>Is Lansing carrying more labor than January–April volume requires? If Lansing matched even 70% of Ann Arbor's labor productivity, retail phase EBITDA would rise from $7K to roughly $26K — about $6.5K per month.</li>
+      <li>Are off-season schedules still sized for the holiday quarter that has now passed? The pop-up phase added staff for the busy season and the store may not have adjusted for the slower months.</li>
     </ul>
   </section>
 
-  <!-- Seasonality -->
   <section class="section">
     <h2 class="section-heading">Seasonality and Trading Pattern</h2>
-    <p>Both stores show the seasonal shape you would expect for a Michigan based gift and food retailer, with December as the peak and January as the trough. Lansing shows a more pronounced peak.</p>
+    <p>Both stores show the seasonal pattern you'd expect for a Michigan gift and food retailer, with December as the peak and January as the trough. Lansing's peak is more pronounced.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Month</th><th>Ann Arbor Sales</th><th>Lansing Sales</th><th>AA Share</th><th>Lansing Share</th></tr></thead>
@@ -499,13 +483,13 @@
       </table>
     </div>
     <ul class="styled">
-      <li>December alone delivered 37 percent of Lansing's seven month sales. For Ann Arbor, the same month was 34 percent.</li>
-      <li>The October to December window delivered 70 percent of Lansing's total period sales, against 63 percent for Ann Arbor.</li>
+      <li>December alone was 37% of Lansing's seven-month sales. For Ann Arbor, the same month was 34%.</li>
+      <li>The October–December window was 70% of Lansing's total period sales, versus 63% for Ann Arbor.</li>
     </ul>
-    <p>Lansing is more holiday concentrated than Ann Arbor. This is a meaningful input to any decision about year round versus seasonal operation.</p>
+    <p>Lansing is more holiday-concentrated than Ann Arbor. This is an important input to any decision about year-round versus seasonal operation.</p>
 
     <div class="sub-heading">Holiday Window Performance</div>
-    <p>To understand where Lansing wins and where it does not, the table below compares specific holiday and event windows on a sales per square foot basis. This normalizes for the size difference between stores.</p>
+    <p>The table below compares specific holiday windows on a sales per square foot basis, which accounts for the size difference between stores.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Window</th><th>Ann Arbor $/sq ft</th><th>Lansing $/sq ft</th><th>Lansing as % of AA</th></tr></thead>
@@ -519,13 +503,12 @@
         </tbody>
       </table>
     </div>
-    <p class="italic-note">Pattern: Lansing outperforms Ann Arbor during gift giving windows and underperforms during smaller holidays and ordinary weeks. This is consistent with the overall seasonal skew.</p>
+    <p class="italic-note">Pattern: Lansing outperforms Ann Arbor during gift-giving windows and underperforms during smaller holidays and regular weeks. This matches the overall seasonal skew.</p>
   </section>
 
-  <!-- Customer Acquisition -->
   <section class="section">
     <h2 class="section-heading">Customer Acquisition and Email Capture</h2>
-    <p>This is where the Lansing story is unambiguously positive.</p>
+    <p>This is where the Lansing story is clearly positive.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Metric</th><th>Ann Arbor</th><th>Lansing</th></tr></thead>
@@ -537,16 +520,15 @@
         </tbody>
       </table>
     </div>
-    <p>Lansing's email capture rate per order is nearly double Ann Arbor's. New customer acquisition is also running at almost twice the Ann Arbor rate, which is expected for a newer store but is still healthy. Both stores show a returning customer share above 90 percent, which speaks well of brand loyalty across the chain.</p>
+    <p>Lansing's email capture rate is nearly double Ann Arbor's. New customer acquisition is also running at almost twice Ann Arbor's rate — expected for a newer store, but still healthy. Both stores show a returning customer share above 90%, which reflects strong brand loyalty across the chain.</p>
     <div class="highlight-box">
-      <strong>Strategic note:</strong> Even with thin off season EBITDA, the store is functioning as a strong customer acquisition channel for the brand. That value does not show up in the store P&amp;L but is real and worth weighing in the recommendation.
+      <strong>Strategic note:</strong> Even with thin off-season EBITDA, the store is functioning as a strong customer acquisition channel for the brand. That value doesn't show up in the store P&amp;L but is real and worth weighing in any recommendation.
     </div>
   </section>
 
-  <!-- Product Mix -->
   <section class="section">
     <h2 class="section-heading">Product Mix and Catalog Fit</h2>
-    <p>There is no signal that the catalog does not work in Lansing. Category mix is similar to Ann Arbor with small skews.</p>
+    <p>There's no signal that the product catalog doesn't work in Lansing. Category mix is similar to Ann Arbor, with small differences.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Category</th><th>Ann Arbor Share</th><th>Lansing Share</th><th>Difference</th></tr></thead>
@@ -564,40 +546,38 @@
         </tbody>
       </table>
     </div>
-    <p>Lansing skews slightly more toward pantry items (mixes, salsa, sauces, baked) and slightly less toward chocolate. Both stores have chocolate as the dominant category. Of the top ten SKUs at each store, seven are shared. Items that appear in Ann Arbor's top ten but not Lansing's are mostly wine and premium chocolate, which reflects a difference in assortment rather than a customer preference gap.</p>
+    <p>Lansing skews slightly more toward pantry items (mixes, salsa, sauces, baked goods) and slightly less toward chocolate. Both stores have chocolate as the top category. Seven of the top ten SKUs are shared between the two stores. Items in Ann Arbor's top ten that aren't in Lansing's are mostly wine and premium chocolate, which reflects assortment differences rather than customer preference.</p>
   </section>
 
-  <!-- What the Numbers Are Saying -->
   <section class="section">
     <h2 class="section-heading">What the Numbers Are Saying</h2>
     <div class="sub-heading">Where Lansing Is Winning</div>
     <ul class="styled">
-      <li>Holiday quarter EBITDA of $118 thousand demonstrates the store can perform strongly when traffic is high.</li>
-      <li>Sales per square foot during the pop up phase ran 15 percent ahead of Ann Arbor.</li>
-      <li>Black Friday weekend at 132 percent of Ann Arbor's $/sq ft and the December gift building period at 117 percent are clear strengths.</li>
-      <li>Email capture rate at 56 percent of orders is the highest in the comparison and a meaningful brand asset.</li>
-      <li>New customer acquisition rate is roughly double Ann Arbor's, which is healthy for a store this young.</li>
-      <li>Total operating expenses as a share of sales are slightly lower than Ann Arbor's. The store is not operationally bloated.</li>
+      <li>Holiday quarter EBITDA of $118K shows the store can perform strongly when traffic is high.</li>
+      <li>Sales per square foot during the pop-up phase ran 15% ahead of Ann Arbor.</li>
+      <li>Black Friday weekend at 132% of Ann Arbor's $/sq ft and the December gift-building period at 117% are clear strengths.</li>
+      <li>Email capture rate at 56% of orders is the highest in the comparison and a meaningful brand asset.</li>
+      <li>New customer acquisition is roughly double Ann Arbor's — healthy for a store this young.</li>
+      <li>Total operating expenses as a share of sales are slightly lower than Ann Arbor's. The store isn't operationally bloated.</li>
     </ul>
     <div class="sub-heading">Where Lansing Is Struggling</div>
     <ul class="styled">
-      <li>Off season EBITDA is thin. January through April produced an average of about $1.7 thousand per month. January was a loss.</li>
-      <li>Labor expense consumed 36 percent of sales in the retail phase, compared to 18 percent at Ann Arbor. This is the single largest controllable gap.</li>
-      <li>EBITDA margin in the retail phase was 4 percent at Lansing versus 22 percent at Ann Arbor.</li>
-      <li>The store is more holiday concentrated than Ann Arbor. December alone is 37 percent of seven month sales, and 95 percent of period EBITDA came from October to December.</li>
+      <li>Off-season EBITDA is thin. January through April averaged about $1.7K per month. January was a loss.</li>
+      <li>Labor consumed 36% of sales in the retail phase, compared to 18% at Ann Arbor. This is the single largest controllable gap.</li>
+      <li>EBITDA margin in the retail phase was 4% at Lansing versus 22% at Ann Arbor.</li>
+      <li>The store is more holiday-concentrated than Ann Arbor. December alone is 37% of seven-month sales, and 95% of period EBITDA came from October–December.</li>
     </ul>
   </section>
 
-  <!-- Methodology -->
   <section class="section">
     <h2 class="section-heading">Notes on Method and Caveats</h2>
     <ul class="styled">
-      <li><strong>Time windows.</strong> Three windows used. Full period October 2025 to April 2026, pop up phase October to December 2025, retail phase January to April 2026. The retail phase is the primary apples to apples view.</li>
-      <li><strong>Source of truth.</strong> Net sales, gross profit, labor, lease, utilities, marketing and EBITDA come from the store level P&amp;L. Order counts, AOV, units per transaction, holiday window slices, product mix and customer flags come from transaction level data and email capture data.</li>
-      <li><strong>Gross margin definition.</strong> The P&amp;L gross profit number includes packaging, freight, damages, scrap and inventory variance in addition to product cost. Pure merchandise margin would be slightly higher. P&amp;L gross margin is used here because it is the audited number that hits net income.</li>
-      <li><strong>Reconciliation note.</strong> P&amp;L net sales for Ann Arbor January to April is $542,311. Transaction level net sales for the same window is $543,995. The small gap reflects timing and treatment differences between GL and POS exports and is not material.</li>
-      <li><strong>Square footage.</strong> Lansing 2,000 sq ft, Ann Arbor 5,000 sq ft. Sales per square foot is the primary normalization.</li>
-      <li><strong>Labor productivity.</strong> Sales per labor hour uses Hours Worked from the payroll system (excludes PTO and sick time). Labor as a share of sales uses Total Labor Expense from the P&amp;L (includes wages, taxes, benefits and accruals).</li>
+      <li><strong>Time windows.</strong> Three windows are used: the full period (October 2025–April 2026), the pop-up phase (October–December 2025), and the retail phase (January–April 2026). The retail phase is the primary apples-to-apples view.</li>
+      <li><strong>Source of truth.</strong> Net sales, gross profit, labor, lease, utilities, marketing, and EBITDA come from the store-level P&amp;L. Order counts, AOV, units per transaction, product mix, and customer data come from transaction-level and email capture data.</li>
+      <li><strong>Gross margin definition.</strong> The P&amp;L gross profit figure includes packaging, freight, damages, scrap, and inventory variance in addition to product cost. Pure merchandise margin would be slightly higher. P&amp;L gross margin is used here because it's the audited number that hits net income.</li>
+      <li><strong>Reconciliation note.</strong> P&amp;L net sales for Ann Arbor (January–April) is $542,311. Transaction-level net sales for the same window is $543,995. The small gap reflects timing and treatment differences between GL and POS exports and is not material.</li>
+      <li><strong>Square footage.</strong> Lansing 2,000 sq ft, Ann Arbor 5,000 sq ft. Sales per square foot is the primary way to normalize for size.</li>
+      <li><strong>Labor productivity.</strong> Sales per labor hour uses Hours Worked from the payroll system (excludes PTO and sick time). Labor as a share of sales uses Total Labor Expense from the P&amp;L (includes wages, taxes, benefits, and accruals).</li>
     </ul>
   </section>
 
